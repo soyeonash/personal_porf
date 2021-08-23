@@ -1,0 +1,41 @@
+@media only screen and (min-width:769px) {
+
+  body,
+  a {
+      cursor: none;
+  }
+
+  .cursor {
+      position: fixed;
+      left: 0;
+      top: 0;
+      pointer-events: none;
+  }
+
+  .cursor--small {
+      width: 20px;
+      height: 20px;
+      left: -10px;
+      top: -10px;
+      border-radius: 50%;
+      z-index: 99;
+      background: #fad2f58c;
+  }
+
+  .cursor--canvas {
+      width: 100vw;
+      height: 100vh;
+      z-index: 100;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  body {
+      cursor: none;
+  }
+
+  .cursor--small,
+  .cursor--canvas {
+      display: none;
+  }
+}
